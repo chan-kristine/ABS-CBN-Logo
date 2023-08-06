@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>ABS-CBN Logo</title>
+
+        <style>
+            canvas{
+                border:8px solid black; 
+                display:block; 
+                background-color: white;
+                margin-left:auto; 
+                margin-right:auto; 
+                margin-top:4%;
+            }
+
+            body{
+                background-image: linear-gradient(to left, #f58080, #80f586, #7f94f4);
+            }
+
+            @font-face {
+            font-family: 'RotisSSBold';
+            src: local('RotisSSBold'), url("RotisSSBold.otf") format('opentype');
+            }
+        </style>
+    </head>
+
+    <body>
+        <canvas id="myCanvas" width="600" height="600">
+            Your browser does not currently support <em>HTML5 Canvas</em>.
+            Kindly use other browser to acccess the site.</canvas>
+        
+        <script>
+            const cnv = document.getElementById("myCanvas");
+            const cxt = cnv.getContext("2d");
+
+            cxt.beginPath();
+            cxt.fillStyle = "red";
+            cxt.arc(300, 230, 225, 0.5 * Math.PI, 2.5 * Math.PI);
+            cxt.fill();
+
+            cxt.beginPath();
+            cxt.fillStyle = "white";
+            cxt.arc(300, 230, 195, 0.5 * Math.PI, 2.5 * Math.PI);
+            cxt.fill();
+
+            cxt.beginPath();
+            cxt.fillStyle = "green";
+            cxt.arc(300, 230, 165, 0.5 * Math.PI, 2.5 * Math.PI);
+            cxt.fill();
+
+            cxt.beginPath();
+            cxt.fillStyle = "white";
+            cxt.arc(300, 230, 135, 0.5 * Math.PI, 2.5 * Math.PI);
+            cxt.fill();
+
+            cxt.beginPath();
+            cxt.fillStyle = "blue";
+            cxt.arc(300, 230, 105, 0.5 * Math.PI, 2.5 * Math.PI);
+            cxt.fill();
+
+            cxt.beginPath();
+            cxt.fillStyle = "white";
+            cxt.arc(300, 230, 75, 0.5 * Math.PI, 2.5 * Math.PI);
+            cxt.fill();
+
+            cxt.clearRect(277, 250, 44, 480);
+            cxt.fillStyle = "black";
+            cxt.fillRect(283, 260, 32, 230);
+
+            cxt.font = "900 110px RotisSSBold";
+            cxt.fillText("ABS-CBN", 62, 585);
+
+        </script>
+    </body>
+</html>
